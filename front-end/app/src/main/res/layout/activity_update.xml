@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.doggo.dogadopt.activity.updateActivity">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_mainmenu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:navigationIcon="@drawable/ic_menu" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="145dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="92dp"
+        android:scaleX="3"
+        android:scaleY="3"
+        android:src="@drawable/update_header" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="78dp"
+        android:orientation="vertical"
+        android:weightSum="50">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/asoPhoto"
+                android:layout_width="99dp"
+                android:layout_height="92dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:elevation="3dp"
+                android:src="@drawable/dog2" />
+
+            <Button
+                android:id="@+id/asoChoosePhoto"
+                android:layout_width="161dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/btn_bg"
+                android:text="Choose File" />
+            <!-- android:onClick="pickFile" /> - to be implemented -->
+
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextInputLayout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Name"
+            android:textAlignment="center">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/asoName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/asoBreed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Breed" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/asoAge"
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Age"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/asoGender"
+                android:layout_width="101dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:entries="@array/dogGenderSpin"
+
+                android:textSize="11.5sp" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/asoDOA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="Date of Arrival"
+                android:onClick="showDatePickerDialog" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/asoPersonality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Personality" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/asoStatus"
+            android:layout_width="288dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:entries="@array/dogStatusSpin"
+            android:textSize="11.5sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/updateAso_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Update Record" />
+
+            <Button
+                android:id="@+id/deleteAso_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/btn_danger"
+                android:text="Delete Record" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
+    <!-- Navigation View -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

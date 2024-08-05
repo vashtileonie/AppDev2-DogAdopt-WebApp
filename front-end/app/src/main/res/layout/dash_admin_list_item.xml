@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/dPicture"
+            android:layout_width="131dp"
+            android:layout_height="131dp"
+            android:src="@drawable/dog2" />
+
+        <TextView
+            android:id="@+id/dNameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/dPicture"
+            android:layout_toRightOf="@+id/dPicture"
+            android:maxLines="1"
+            android:text="Milo"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dBreedTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dNameTxt"
+            android:layout_alignStart="@+id/dNameTxt"
+            android:layout_alignLeft="@+id/dNameTxt"
+            android:maxLines="1"
+            android:text="Aspin"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/dStatusTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dBreedTxt"
+            android:layout_alignStart="@+id/dBreedTxt"
+            android:layout_alignLeft="@+id/dBreedTxt"
+            android:maxLines="1"
+            android:paddingBottom="2sp"
+            android:textStyle="bold"
+            android:text="ADOPTED"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/item_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dStatusTxt"
+            android:layout_alignEnd="@+id/dStatusTxt"
+            android:layout_alignRight="@+id/dStatusTxt"
+            android:maxLines="1"
+            android:backgroundTint="@color/btn_bg"
+            android:text="EDIT"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

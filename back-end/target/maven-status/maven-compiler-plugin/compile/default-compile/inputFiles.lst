@@ -1,0 +1,16 @@
+/Users/altheacruz/Desktop/IT192/DogAdopt-BackEnd/src/main/java/com/rijai/LocationApi/service/IDogService.java
+/Users/altheacruz/Desktop/IT192/DogAdopt-BackEnd/src/main/java/com/rijai/LocationApi/repository/AccountRepository.java
+/Users/altheacruz/Desktop/IT192/DogAdopt-BackEnd/src/main/java/com/rijai/LocationApi/controller/AccountController.java
+/Users/altheacruz/Desktop/IT192/DogAdopt-BackEnd/src/main/java/com/rijai/LocationApi/controller/RequestController.java
+/Users/altheacruz/Desktop/IT192/DogAdopt-BackEnd/src/main/java/com/rijai/LocationApi/repository/DogRepository.java
+/Users/altheacruz/Desktop/IT192/DogAdopt-BackEnd/src/main/java/com/rijai/LocationApi/model/Request.java
+/Users/altheacruz/Desktop/IT192/DogAdopt-BackEnd/src/main/java/com/rijai/LocationApi/model/Dog.java
+/Users/altheacruz/Desktop/IT192/DogAdopt-BackEnd/src/main/java/com/rijai/LocationApi/service/IRequestService.java
+/Users/altheacruz/Desktop/IT192/DogAdopt-BackEnd/src/main/java/com/rijai/LocationApi/model/Account.java
+/Users/altheacruz/Desktop/IT192/DogAdopt-BackEnd/src/main/java/com/rijai/LocationApi/repository/RequestRepository.java
+/Users/altheacruz/Desktop/IT192/DogAdopt-BackEnd/src/main/java/com/rijai/LocationApi/service/RequestService.java
+/Users/altheacruz/Desktop/IT192/DogAdopt-BackEnd/src/main/java/com/rijai/LocationApi/service/DogService.java
+/Users/altheacruz/Desktop/IT192/DogAdopt-BackEnd/src/main/java/com/rijai/LocationApi/DemoApplication.java
+/Users/altheacruz/Desktop/IT192/DogAdopt-BackEnd/src/main/java/com/rijai/LocationApi/service/AccountService.java
+/Users/altheacruz/Desktop/IT192/DogAdopt-BackEnd/src/main/java/com/rijai/LocationApi/controller/DogController.java
+/Users/altheacruz/Desktop/IT192/DogAdopt-BackEnd/src/main/java/com/rijai/LocationApi/service/IAccountService.java

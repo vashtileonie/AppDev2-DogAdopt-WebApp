@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">DogAdopt</string>
+
+    <string-array name="dogStatusSpin">
+        <item>AVAILABLE</item>
+        <item>PROCESSING</item>
+        <item>ADOPTED</item>
+    </string-array>
+    <string-array name="TypeSortSpin">
+        <item>Name</item>
+        <item>Breed</item>
+        <item>Status</item>
+    </string-array>
+    <string-array name="UpDownSortSpin">
+        <item>Ascending</item>
+        <item>Descending</item>
+    </string-array>
+    <string-array name="dogGenderSpin">
+        <item>MALE</item>
+        <item>FEMALE</item>
+    </string-array>
+    <string-array name="reqStatus">
+        <item>FOR ADOPTION</item>
+        <item>PENDING</item>
+        <item>RESOLVED</item>
+    </string-array>
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+</resources>
